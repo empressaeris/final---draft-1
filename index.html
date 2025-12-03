@@ -43,209 +43,91 @@
     .meta{margin-top:10px;color:var(--muted);font-size:14px}
 
     footer{margin:36px 0 14px;color:var(--muted);text-align:center}
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
 
     .about-wrapper {
-  display: flex;
-  gap: 24px;
-  background: var(--card);
-  border: 1px solid rgba(255,255,255,0.06);
-  box-shadow: var(--shadow);
-  border-radius: var(--radius);
-  padding: 24px;
-  margin-bottom: 24px;
-}
+      display: flex;
+      gap: 24px;
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.06);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
 
-.about-photo {
-  width: 280px;
-  height: auto;
-  border-radius: var(--radius);
-  object-fit: cover;
-  box-shadow: var(--shadow);
-}
+    .about-photo {
+      width: 280px;
+      height: auto;
+      border-radius: var(--radius);
+      object-fit: cover;
+      box-shadow: var(--shadow);
+    }
 
-.about-text {
-  flex: 1;
-}
-
-.about-text h2 {
-  margin-top: 0;
-  font-size: 26px;
-  margin-bottom: 12px;
-}
-
-.about-text p {
-  line-height: 1.7;
-  color: var(--muted);
-  margin-bottom: 14px;
-}
+    .about-text { flex:1; }
+    .about-text h2{margin:0 0 12px;font-size:26px}
+    .about-text p{line-height:1.7;color:var(--muted);margin-bottom:14px}
   </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <header>
-      <img class="avatar" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d8162bb-ab3a-42b1-80da-f714addab3e5/dl0nlvt-adb1a9e2-e800-49b3-a58f-24c4f1e23fbd.png/v1/fit/w_421,h_459,q_70,strp/marie_and_cid_by_empressaeris_dl0nlvt-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDU5IiwicGF0aCI6Ii9mLzZkODE2MmJiLWFiM2EtNDJiMS04MGRhLWY3MTRhZGRhYjNlNS9kbDBubHZ0LWFkYjFhOWUyLWU4MDAtNDliMy1hNThmLTI0YzRmMWUyM2ZiZC5wbmciLCJ3aWR0aCI6Ijw9NDIxIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.55Z8TwmVUQcanbZyy_KIYJF4z6TyQzReqbXn1ROZ5BU" alt="Marie and Cid"/>
-      <div class="title">
-        <h1>Marie Brache</h1>
-        <p>Digital Artist • Programmer • Game Developer</p>
-      </div>
-      <nav class="links" aria-label="social links">
-        <a href="https://docs.google.com/document/d/1yFXTVA3GXwkViQg6q2A43_WXkUXTcly05wn0QZhrj2M/edit?usp=sharing">Resume</a>
-        <a href="https://github.com/empressaeris">GitHub</a>
-        <a href="mbrache@protonmail.com">Email</a>
-      </nav>
-    </header>
+<div class="wrap">
 
-    <section class="hero">
-      <h2>Hello everyone! Marie Here!</h2>
-      <p>I am a digital artist, graphic designer, occassional programmer, amatuer game developer and Cid and Odin's big sister!
-      </p>
-    </section>
-
-    <div class="tabs" role="tablist">
-      <button class="tab active" data-filter="all" role="tab" aria-selected="true">All</button>
-      <button class="tab" data-filter="p5" role="tab">p5.js</button>
-      <button class="tab" data-filter="art" role="tab">Art</button>
-      <button class="tab" data-filter="about" role="tab">About Me</button>
-    </div>
-
-    <section class="grid" id="grid" aria-live="polite"></section>
-    <footer>© <span id="y"></span> Marie Brache • Built with plain HTML/CSS/JS • Hosted on GitHub Pages</footer>
+<header>
+  <img class="avatar" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d8162bb-ab3a-42b1-80da-f714addab3e5/dl0nlvt-adb1a9e2-e800-49b3-a58f-24c4f1e23fbd.png/v1/fit/w_421,h_459,q_70,strp/marie_and_cid_by_empressaeris_dl0nlvt-375w-2x.jpg" alt="Marie and Cid"/>
+  <div class="title">
+    <h1>Marie Brache</h1>
+    <p>Digital Artist • Programmer • Game Developer</p>
   </div>
+  <nav class="links">
+    <a href="https://docs.google.com/document/d/1yFXTVA3GXwkViQg6q2A43_WXkUXTcly05wn0QZhrj2M/edit?usp=sharing">Resume</a>
+    <a href="https://github.com/empressaeris">GitHub</a>
+    <a href="mailto:mbrache@protonmail.com">Email</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Hello everyone! Marie Here!</h2>
+  <p>I am a digital artist, graphic designer, occassional programmer, amatuer game developer and Cid and Odin's big sister!</p>
+</section>
+
+<div class="tabs">
+  <button class="tab active" data-filter="all">All</button>
+  <button class="tab" data-filter="p5">p5.js</button>
+  <button class="tab" data-filter="art">Art</button>
+  <button class="tab" data-filter="about">About Me</button>
+</div>
+
+<section class="grid" id="grid"></section>
 
 <section id="aboutSection" style="display:none;">
   <div class="about-wrapper">
     <img class="about-photo" 
-         src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d8162bb-ab3a-42b1-80da-f714addab3e5/dl0nlvt-adb1a9e2-e800-49b3-a58f-24c4f1e23fbd.png/v1/fit/w_421,h_459,q_70,strp/marie_and_cid_by_empressaeris_dl0nlvt-375w-2x.jpg"
-         alt="Marie Brache">
+         src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d8162bb-ab3a-42b1-80da-f714addab3e5/dl0nlvt-adb1a9e2-e800-49b3-a58f-24c4f1e23fbd.png/v1/fit/w_421,h_459,q_70,strp/marie_and_cid_by_empressaeris_dl0nlvt-375w-2x.jpg">
 
     <div class="about-text">
       <h2>About Me</h2>
 
-      <p>I began my professional journey at the University of Central Florida in 2017, first working at the Faculty Center for Teaching and Learning as a Graphic Design Assistant. In 2021, I transitioned into Webcourses@UCF Support as an IT Client Support Specialist I, providing assistance to students, staff, and faculty across a wide range of academic and technical needs.</p>
+      <p>I began my professional journey at the University of Central Florida in 2017, first working at the Faculty Center for Teaching and Learning as a Graphic Design Assistant. In 2021, I transitioned into Webcourses@UCF Support as an IT Client Support Specialist I.</p>
 
-      <p>I earned my Associate of Arts degree from Seminole State College of Florida in 2016, followed by a Bachelor of Arts in Digital Media: Game Design in 2020. I am currently pursuing my Master of Arts in Digital Media. Throughout my career at UCF, I have supported users with everything from Canvas (UCF’s customized LMS) to Microsoft Office, PeopleSoft, and multiple operating systems including Windows, macOS, and ChromeOS. I’ve also assisted with hardware troubleshooting for PCs, Macs, Chromebooks, tablets, printers, cameras, and microphones.</p>
+      <p>I earned my Associate of Arts degree from Seminole State College of Florida in 2016, followed by a Bachelor of Arts in Digital Media: Game Design in 2020. I am currently pursuing my Master of Arts in Digital Media.</p>
 
-      <p>Beyond technical support, I have worked in web development, video production, photography, digital art, and served as a teaching assistant for UCF’s Adobe Initiative. In June 2025, I joined the School of Communication Sciences and Disorders.</p>
+      <p>Throughout my career at UCF, I have supported users with Canvas, Microsoft Office, PeopleSoft, Windows, macOS, ChromeOS, and hardware troubleshooting for computers, tablets, printers, cameras, and microphones.</p>
 
-      <p>Outside of UCF, I freelance as a video editor and digital character artist. I enjoy creating digital art, building games, and working in Unreal Engine.</p>
+      <p>I have also worked in web development, video production, photography, digital art, and served as a teaching assistant for UCF’s Adobe Initiative. In June 2025, I joined the School of Communication Sciences and Disorders.</p>
 
-      <p>I also hold certifications in 3D Printing and Interactive Media Design from Seminole State College of Florida.</p>
+      <p>Outside of UCF, I freelance as a video editor and digital character artist. I also enjoy creating digital art, building games, and using Unreal Engine.</p>
+
+      <p>I hold certifications in 3D Printing and Interactive Media Design from Seminole State College of Florida.</p>
     </div>
   </div>
 </section>
-  
-<script>
-// ==== HOW TO ADD PROJECTS =====================================================
-// Each entry below becomes a card automatically.
-// type: "p5" renders an iframe (use the p5 Web Editor "Share → Embed" URL, or an exported sketch folder path like "sketches/my-sim/index.html");
-// type: "other" renders an image and a link to any page (PDF, itch.io, YouTube, Figma, etc.)
-// thumb: optional image shown before an iframe loads (helps performance). If omitted for p5, the iframe loads directly.
-// tags: optional list of labels.
-// ==============================================================================
-const PROJECTS = [
-  {
-    title: "Cid and Odin Game",
-    type: "p5",
-    embed: "https://editor.p5js.org/empressaeris/full/T1UIo01bd",
-    desc: "Help Cid and Odin find out if you love them!",
-    tags: ["p5.js", "Game"]
-  },
-  {
-    title: "Lysa Arena RPG",
-    type: "p5",
-    embed: "https://editor.p5js.org/empressaeris/full/XAN15NCE2C",
-    desc: "Play as the Mage Lysa and defeat the champions of the Havenwood Arena!",
-    tags: ["p5.js", "Game"]
-  },
-  {
-    title: "Marie's 3D Gallery",
-    type: "p5",
-    embed: "https://editor.p5js.org/empressaeris/full/odwfPvln-",
-    desc: "Play as the Mage Lysa and defeat the champions of the Havenwood Arena!",
-    tags: ["p5.js", "Game"]
-  },
-{
-  title: "Selene MK9 Portrait",
-  type: "art",
-  link: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d8162bb-ab3a-42b1-80da-f714addab3e5/dedrxhx-f75a9f77-f3f2-43e8-8dac-09defe5fb52b.png",
-  desc: "MK9-inspired stylized character portrait.",
-  tags: ["digital art"]
-},
-{
-  title: "Selene Stoic",
-  type: "art",
-  link: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d8162bb-ab3a-42b1-80da-f714addab3e5/debqac6-c2abb4f3-7b72-42f2-9903-35d75211b1dc.png4",
-  desc: "Selene looking stoic and composed.",
-  tags: ["digital art"]
-},
-{
-  title: "Selene Shocked",
-  type: "art",
-  link: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d8162bb-ab3a-42b1-80da-f714addab3e5/de5wkex-8aec6a4a-d88a-4536-adba-f3cadfcd4d57.png",
-  desc: "Selene reacting in shock.",
-  tags: ["digital art"]
-},
-{
-  title: "Selene Frustrated",
-  type: "art",
-  link: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d8162bb-ab3a-42b1-80da-f714addab3e5/de5wkex-8aec6a4a-d88a-4536-adba-f3cadfcd4d57.png",
-  desc: "Illustration of Selene expressing frustration.",
-  tags: ["digital art"]
-},
-{
-  title: "Selene Angry",
-  type: "art",
-  link: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d8162bb-ab3a-42b1-80da-f714addab3e5/de5wk9h-bb6f6ebf-ad8c-40c3-81b4-ccf1516eb69a.png",
-  desc: "Selene in an intense anger expression.",
-  tags: ["digital art"]
-},
-{
-  title: "Selene Looking Up",
-  type: "art",
-  link: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d8162bb-ab3a-42b1-80da-f714addab3e5/de5wk45-6fe42613-20ad-455e-b055-01eda1c0ef78.png",
-  desc: "Selene gazing upward softly.",
-  tags: ["digital art"]
-},
-{
-  title: "Selene Lovely",
-  type: "art",
-  link: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d8162bb-ab3a-42b1-80da-f714addab3e5/de5wjyy-8c6d7f24-18d4-4c71-b980-8d0b56ee3269.png",
-  desc: "A soft, lovely portrait of Selene.",
-  tags: ["digital art"]
-},
-{
-  title: "Soul Looking Down at Selene",
-  type: "art",
-  link: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d8162bb-ab3a-42b1-80da-f714addab3e5/dfs65ub-ccdfb381-520e-4c4d-afb8-1206b302b587.png",
-  img: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d8162bb-ab3a-42b1-80da-f714addab3e5/dfs65ub-ccdfb381-520e-4c4d-afb8-1206b302b587.png",
-  desc: "Soul gazing down at Selene.",
-  tags: ["digital art"]
-},
-{
-  title: "Luisa (Viera Fanart)",
-  type: "art",
-  link: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d8162bb-ab3a-42b1-80da-f714addab3e5/desydsx-9fc32d5a-2997-4679-a9e3-a1946a7acc00.png",
-  desc: "Viera fanart character illustration (Luisa).",
-  tags: ["digital art", "fanart"]
-},
-{
-  title: "Aerith Portrait",
-  type: "art",
-  link: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d8162bb-ab3a-42b1-80da-f714addab3e5/ddi6uqt-043588cf-39a0-414e-a31c-1535a4d03153.png",
-  desc: "Final Fantasy–inspired Aerith fanart.",
-  tags: ["digital art", "fanart"]
-},
-{
-  title: "Shae Portrait",
-  type: "art",
-  link: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d8162bb-ab3a-42b1-80da-f714addab3e5/ddi6ujh-4bcc68bc-6e40-4e4e-8da1-690a77d8d46c.png",
-  desc: "Tall full-body portrait of Shae.",
-  tags: ["digital art"]
-}
-];
 
-// ===== RENDER ================================================================
+<footer>© <span id="y"></span> Marie Brache • Built with HTML/CSS/JS • Hosted on GitHub Pages</footer>
+</div>
+
+<script>
+const PROJECTS = [];
+
 const grid = document.getElementById('grid');
 const tabs = document.querySelectorAll('.tab');
 const year = document.getElementById('y');
@@ -265,30 +147,14 @@ function card(project){
   thumb.appendChild(badge);
 
   if(isP5){
-    if(project.thumb){
-      // Lazy trap: click to load iframe, improves performance
-      const img = document.createElement('img');
-      img.src = project.thumb; img.alt = project.title;
-      thumb.appendChild(img);
-      thumb.style.cursor = 'pointer';
-      thumb.title = 'Click to load';
-      thumb.addEventListener('click', ()=>{
-        thumb.innerHTML = '';
-        thumb.appendChild(badge);
-        const ifr = document.createElement('iframe');
-        ifr.loading = 'lazy';
-        ifr.src = project.embed;
-        thumb.appendChild(ifr);
-      }, { once:true });
-    } else {
-      const ifr = document.createElement('iframe');
-      ifr.loading = 'lazy';
-      ifr.src = project.embed;
-      thumb.appendChild(ifr);
-    }
+    const ifr = document.createElement('iframe');
+    ifr.loading = 'lazy';
+    ifr.src = project.embed;
+    thumb.appendChild(ifr);
   } else {
     const img = document.createElement('img');
-    img.src = project.img; img.alt = project.title;
+    img.src = project.img || project.link;
+    img.alt = project.title;
     thumb.appendChild(img);
   }
 
@@ -305,8 +171,10 @@ function card(project){
 
   el.appendChild(thumb); el.appendChild(body);
 
-  if(isP5 && project.embed){ el.addEventListener('click', ()=> window.open(project.embed,'_blank')); el.style.cursor='pointer'; }
-  if(!isP5 && project.link){ el.addEventListener('click', ()=> window.open(project.link,'_blank')); el.style.cursor='pointer'; }
+  if(project.embed) el.addEventListener('click', ()=> window.open(project.embed,'_blank'));
+  if(project.link) el.addEventListener('click', ()=> window.open(project.link,'_blank'));
+  el.style.cursor='pointer';
+
   return el;
 }
 
@@ -318,10 +186,9 @@ function render(){
 
 render();
 
-// Tabs
-  for (const t of tabs) {
-  t.addEventListener('click', () => {
-    tabs.forEach(x => x.classList.remove('active'));
+for(const t of tabs){
+  t.addEventListener('click', ()=>{
+    tabs.forEach(x=> x.classList.remove('active'));
     t.classList.add('active');
 
     currentFilter = t.dataset.filter;
@@ -339,7 +206,6 @@ render();
     }
   });
 }
-
 </script>
 </body>
 </html>
